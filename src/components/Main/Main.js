@@ -1,6 +1,8 @@
+import "./Main.css";
+
 const Main = (props) => (
   <main>
-    <p>Main</p>
+    <h1>OK</h1>
   </main>
 );
 

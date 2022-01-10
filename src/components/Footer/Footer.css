@@ -1,0 +1,22 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #005078;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+}
+footer p {
+  padding: 1rem;
+  font-weight: bold;
+}
+footer p a {
+  color: white;
+  text-decoration: underline 5px transparent;
+  transition: 300ms;
+}
+footer p a:hover {
+  transition: 300ms;
+  text-decoration: underline 5px white;
+}

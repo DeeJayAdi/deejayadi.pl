@@ -1,0 +1,19 @@
+nav.menu {
+  background-color: #005078;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+}
+nav.menu button {
+  background-color: #005078;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+nav.menu button:hover {
+  transition: 300ms;
+  filter: brightness(80%);
+}
