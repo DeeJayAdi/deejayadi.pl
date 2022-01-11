@@ -9,7 +9,7 @@ nav.menu button {
   font-size: large;
   font-weight: bold;
   border: none;
-  padding: 1rem;
+  padding: 0.6rem;
   cursor: pointer;
   transition: 300ms;
 }

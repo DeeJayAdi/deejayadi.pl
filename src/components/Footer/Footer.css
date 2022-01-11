@@ -6,9 +6,9 @@ footer {
   background-color: #005078;
   text-align: center;
   box-shadow: 0 0 5px black;
+  padding: 0.6rem;
 }
 footer p {
-  padding: 1rem;
   font-weight: bold;
 }
 footer p a {
