@@ -1,4 +1,6 @@
 nav.menu {
+  position: sticky;
+  top: 0;
   background-color: #005078;
   text-align: center;
   box-shadow: 0 0 5px black;

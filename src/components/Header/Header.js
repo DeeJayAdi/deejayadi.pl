@@ -11,30 +11,22 @@ const Nav = (props) => (
     <Button
       label="Strona główna"
       name="homepage"
-      onClick={props.handleChangeActivePage}
+      onClick={props.handleGoToElement}
     />
-    <Button
-      label="O mnie"
-      name="aboutme"
-      onClick={props.handleChangeActivePage}
-    />
+    <Button label="O mnie" name="aboutme" onClick={props.handleGoToElement} />
     <Button
       label="Moje projekty"
       name="myprojects"
-      onClick={props.handleChangeActivePage}
+      onClick={props.handleGoToElement}
     />
-    <Button
-      label="Kontakt"
-      name="contact"
-      onClick={props.handleChangeActivePage}
-    />
+    <Button label="Kontakt" name="contact" onClick={props.handleGoToElement} />
   </nav>
 );
 
 const Header = (props) => (
-  <header>
-    <Nav handleChangeActivePage={props.handleChangeActivePage} />
-  </header>
+  <>
+    <header id="homepage"></header>
+    <Nav handleGoToElement={props.handleGoToElement} />
+  </>
 );
-
 export default Header;

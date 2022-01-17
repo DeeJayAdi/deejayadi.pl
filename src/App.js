@@ -5,16 +5,14 @@ import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
 
 export default class App extends Component {
-  state = {
-    activePage: "",
-  };
-  handleChangeActivePage = (e) => {
-    this.setState({ activePage: e.target.name });
+  handleGoToElement = (e) => {
+    const y = document.querySelector("nav").offsetHeight * 2;
+    window.scrollTo(0, document.getElementById(e.target.name).offsetTop - y);
   };
   render() {
     return (
       <>
-        <Header handleChangeActivePage={this.handleChangeActivePage} />
+        <Header handleGoToElement={this.handleGoToElement} />
         <Main />
         <Footer />
       </>

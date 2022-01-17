@@ -2,3 +2,12 @@ main {
   margin: 3rem auto;
   width: 80%;
 }
+div.info {
+  background-color: #005078;
+  margin: 2rem 0;
+  padding: 1rem;
+  box-shadow: 0 0 5px black;
+}
+div.info > h1 {
+  text-align: center;
+}
