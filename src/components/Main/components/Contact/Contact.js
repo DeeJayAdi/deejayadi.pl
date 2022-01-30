@@ -1,6 +1,9 @@
+import "./Contact.css";
+
 const Contact = (props) => (
-  <div className="info contact" id="contact">
-    <h1>{props.data.title}</h1>
+  <div className="box">
+    <h1>Contact</h1>
+    <div className="container contact">kontakt@deejayadi.pl</div>
   </div>
 );
 

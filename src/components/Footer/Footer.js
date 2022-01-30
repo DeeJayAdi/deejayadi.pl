@@ -1,12 +1,12 @@
 import "./Footer.css";
 
 const Footer = (props) => {
-  const current_year = new Date().getFullYear();
+  const year = new Date().getFullYear();
+
   return (
     <footer>
       <p>
-        Copyright &copy; {current_year} by&nbsp;
-        <a href="https://deejayadi.pl">DeeJay Adi</a>
+        Copyright &copy; {year} by <a href="/">DeeJay Adi</a>
       </p>
     </footer>
   );

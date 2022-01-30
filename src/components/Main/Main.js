@@ -1,33 +1,18 @@
-import { Component } from "react";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Contact from "./components/Contact/Contact";
-import MyProjects from "./components/MyProjects/MyProjects";
 import "./Main.css";
+import AboutMe from "./components/AboutMe/AboutMe";
+import MyProjects from "./components/MyProjects/MyProjects";
+import Contact from "./components/Contact/Contact";
 
-class Main extends Component {
-  state = {
-    pl: {
-      aboutme: {
-        title: "O mnie",
-      },
-      myProjects: {
-        title: "Moje projekty",
-      },
-      contact: {
-        title: "Kontakt",
-      },
-    },
-  };
-  render() {
-    const data = this.state.pl;
-    return (
-      <main>
-        <AboutMe data={data.aboutme} />
-        <MyProjects data={data.myProjects} />
-        <Contact data={data.contact} />
-      </main>
-    );
-  }
-}
+const Main = (props) => (
+  <main>
+    <AboutMe
+      LanguagesToolsAndTechnologiesElement={
+        props.LanguagesToolsAndTechnologiesElement
+      }
+    />
+    <MyProjects MyProjects={props.MyProjects} />
+    <Contact />
+  </main>
+);
 
 export default Main;

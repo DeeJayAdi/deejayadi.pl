@@ -1,0 +1,14 @@
+div.projectsList {
+  display: flex;
+  justify-content: center;
+}
+a.project {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  transition: filter 300ms;
+  background-color: #00366b;
+}
+a.project:hover {
+  filter: brightness(85%);
+}

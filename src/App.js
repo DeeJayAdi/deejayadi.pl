@@ -1,19 +1,22 @@
 import { Component } from "react";
-import Header from "./components/Header/Header";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import data from "./data.json";
 
 export default class App extends Component {
-  handleGoToElement = (e) => {
-    const y = document.querySelector("nav").offsetHeight * 2;
-    window.scrollTo(0, document.getElementById(e.target.name).offsetTop - y);
-  };
+  state = data;
   render() {
     return (
       <>
-        <Header handleGoToElement={this.handleGoToElement} />
-        <Main />
+        <Header />
+        <Main
+          LanguagesToolsAndTechnologiesElement={
+            this.state.LanguagesToolsAndTechnologiesElement
+          }
+          MyProjects={this.state.MyProjects}
+        />
         <Footer />
       </>
     );

@@ -1,0 +1,14 @@
+div.languagestoolsandtechnologies > h1 {
+  text-align: center;
+  padding: 1rem;
+}
+div.languagestoolsandtechnologies > div {
+  margin: 1rem auto;
+  text-align: center;
+  width: 50%;
+}
+img.languagestoolsandtechnologieselement {
+  display: inline-block;
+  height: 50px;
+  margin: 10px;
+}
