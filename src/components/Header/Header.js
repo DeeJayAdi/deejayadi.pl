@@ -1,9 +1,18 @@
+import { useState } from "react";
 import "./Header.css";
 
-const Header = (props) => (
-  <header>
-    <h1>Welcome...</h1>
-  </header>
-);
+const Header = (props) => {
+  const [opacity, setOpacity] = useState(0);
+
+  setTimeout(() => {
+    setOpacity(1);
+  }, 2000);
+
+  return (
+    <header>
+      <h1 style={{ opacity: opacity }}>Hello world!</h1>
+    </header>
+  );
+};
 
 export default Header;
