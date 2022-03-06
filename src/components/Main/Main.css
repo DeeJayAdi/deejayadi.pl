@@ -1,5 +1,6 @@
 div.box {
   background-color: #00478f;
+  margin: 10rem 0;
 }
 div.box > h1 {
   padding: 2rem 0;

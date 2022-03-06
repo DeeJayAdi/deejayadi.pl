@@ -10,7 +10,7 @@ const Header = (props) => {
 
   return (
     <header>
-      <h1 style={{ opacity: opacity }}>Hello world!</h1>
+      <h1 style={{ opacity: opacity }}>Welcome!</h1>
     </header>
   );
 };
