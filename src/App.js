@@ -97,7 +97,14 @@ export default class App extends Component {
       { id: "aboutme", label: "O mnie" },
       { id: "skillbar", label: "Umiejętności" },
       { id: "myprojects", label: "Moje projekty" },
+      { id: "socialMedia", label: "Media społecznościowe" },
       { id: "contact", label: "Kontakt" },
+    ],
+    socialMedia: [
+      {
+        link: "https://github.com/DeeJayAdi",
+        label: <i class="fa-brands fa-github"></i>,
+      },
     ],
   };
   handleGoTo = (id) => {
@@ -109,6 +116,7 @@ export default class App extends Component {
         <Nav buttons={this.state.navButtons} />
         <Header />
         <Main
+          socialMedia={this.state.socialMedia}
           skills={this.state.skills}
           myProjects={this.state.MyProjects}
           ltat={this.state.LanguagesToolsAndTechnologiesElement}

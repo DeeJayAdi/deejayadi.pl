@@ -1,9 +1,12 @@
 @media (min-device-width: 900px) {
   /* desktop */
   header {
-    text-align: center;
+    height: 50vh;
   }
   div.logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     background-image: url("./Logo2.png");
     background-size: contain;
     background-position: center;
@@ -14,10 +17,12 @@
 @media (max-device-width: 900px) {
   /* mobile */
   header {
-    text-align: center;
-    padding: 2rem;
+    height: 30vh;
   }
   div.logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     background-image: url("./Logo2.png");
     background-size: contain;
     background-position: center;

@@ -54,6 +54,7 @@
     flex-direction: column;
     top: 100%;
     width: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.37);
   }
   nav button {
     background-color: var(--bg-color);
