@@ -1,0 +1,75 @@
+@media (min-device-width: 900px) {
+  /* desktop */
+  div.skilList {
+    margin: 0 auto;
+    width: 40%;
+  }
+  div.skillBar {
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    height: 3rem;
+    margin: 1rem 0;
+    position: relative;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  div.skillBar p.label {
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    transform: translateY(-50%);
+    width: max-content;
+  }
+  div.skillBar div.bar {
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(40, 130, 0);
+    width: 0%;
+    transition: width 1s;
+  }
+  div.skillBar div.percent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+}
+@media (max-device-width: 900px) {
+  /* mobile */
+  div.skilList {
+    width: 100%;
+  }
+  div.skillBar {
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    height: 3rem;
+    margin: 1rem 0;
+    position: relative;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  div.skillBar p.label {
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    transform: translateY(-50%);
+    width: max-content;
+  }
+  div.skillBar div.bar {
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(40, 130, 0);
+    width: 0%;
+    transition: width 1s;
+  }
+  div.skillBar div.percent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+}

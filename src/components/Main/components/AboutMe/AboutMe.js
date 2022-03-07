@@ -1,37 +1,33 @@
 import "./AboutMe.css";
 
-const LanguagesToolsAndTechnologiesElement = (props) => (
-  <img
-    className="languagestoolsandtechnologieselement"
-    src={props.imgLink}
-    alt={props.alt}
-  />
-);
-
-const LanguagesToolsAndTechnologies = (props) => (
-  <div className="container languagestoolsandtechnologies">
-    <h1>Languages, Tools and Technologies</h1>
-    <div>
-      {props.LanguagesToolsAndTechnologiesElement.map((e, index) => (
-        <LanguagesToolsAndTechnologiesElement
+const AboutMe = (props) => (
+  <div id="aboutme" className="box box-info noselect">
+    {/* <h1>O mnie</h1> */}
+    {/* <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, sunt
+      exercitationem? Quae placeat in, suscipit beatae impedit totam ex dolor
+      magni tempora. Delectus consequatur aspernatur quia aliquam voluptatum
+      nobis eos odit fuga, tempore facilis sunt, possimus laboriosam mollitia
+      reiciendis veniam dolorem alias. Ex sed dolore dicta commodi ut excepturi
+      officia ipsam alias repellendus pariatur ea quasi reiciendis delectus ipsa
+      ad nesciunt quam, deserunt necessitatibus. Accusamus debitis, placeat
+      expedita incidunt maiores provident fugit! Debitis, repellendus
+      consequuntur! Necessitatibus reprehenderit quam rem. Incidunt inventore
+      commodi nam dolores corrupti minus, laborum repellendus. Vel inventore eos
+      aliquid ad eaque eius, distinctio molestias eveniet earum expedita!
+    </p> */}
+    <h2>Czego używam?</h2>
+    <div className="tlist">
+      {props.ltat.map((i, index) => (
+        <img
           key={index}
-          imgLink={e.imgLink}
-          alt={e.alt}
+          className="ticon"
+          src={i.imgLink}
+          alt={i.alt}
+          title={i.alt}
         />
       ))}
     </div>
   </div>
 );
-
-const AboutMe = (props) => (
-  <div className="box aboutme">
-    <h1>About me</h1>
-    <LanguagesToolsAndTechnologies
-      LanguagesToolsAndTechnologiesElement={
-        props.LanguagesToolsAndTechnologiesElement
-      }
-    />
-  </div>
-);
-
 export default AboutMe;

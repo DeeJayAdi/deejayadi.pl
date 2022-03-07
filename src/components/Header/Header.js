@@ -1,18 +1,9 @@
-import { useState } from "react";
 import "./Header.css";
 
-const Header = (props) => {
-  const [opacity, setOpacity] = useState(0);
-
-  setTimeout(() => {
-    setOpacity(1);
-  }, 2000);
-
-  return (
-    <header>
-      <h1 style={{ opacity: opacity }}>Welcome!</h1>
-    </header>
-  );
-};
+const Header = (props) => (
+  <header id="top" className="box">
+    <div className="logo"></div>
+  </header>
+);
 
 export default Header;

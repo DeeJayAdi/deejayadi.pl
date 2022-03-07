@@ -4,9 +4,9 @@ const Footer = (props) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer className="noselect">
       <p>
-        Copyright &copy; {year} by <a href="/">DeeJay Adi</a>
+        &copy; {year} by <a href="/">DeeJay Adi</a>
       </p>
     </footer>
   );

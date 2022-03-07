@@ -1,27 +1,41 @@
 import "./Nav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { isMobile } from "react-device-detect";
+import { useState } from "react";
 
-const Button = (props) => (
-  <button onClick={() => props.onClick(props.id)}>{props.label}</button>
-);
+const goTo = (e, id) => {
+  if (!document.getElementById(id)) return;
+  const h = e.target.offsetHeight;
+  const y = document.getElementById(id).offsetTop;
 
-const id_list = [
-  { id: "home", label: "Home page" },
-  { id: "aboutme", label: "About me" },
-  { id: "myprojects", label: "My projects" },
-  { id: "contact", label: "Contact" },
-];
+  window.scrollTo({ top: y - h - 100, behavior: "smooth" });
+};
 
-const Nav = (props) => (
-  <nav>
-    {id_list.map((e, index) => (
-      <Button
-        key={index}
-        onClick={props.handleGoTo}
-        label={e.label}
-        id={e.id}
-      />
-    ))}
-  </nav>
-);
+const Nav = (props) => {
+  const [displayMenu, setDisplayMenu] = useState(!isMobile);
+  const changeVisiblity = () => setDisplayMenu(!displayMenu);
+
+  return (
+    <nav>
+      <div className="showHide" onClick={changeVisiblity}>
+        <FontAwesomeIcon icon={displayMenu ? faXmark : faBars} />
+      </div>
+      <div className="menu" style={{ display: !displayMenu && "none" }}>
+        {props.buttons.map((bt, index) => (
+          <button
+            onClick={(e) => {
+              goTo(e, bt.id);
+              setDisplayMenu(!isMobile);
+            }}
+            key={index}
+          >
+            {bt.label}
+          </button>
+        ))}
+      </div>
+    </nav>
+  );
+};
 
 export default Nav;

@@ -1,17 +1,13 @@
 import "./MyProjects.css";
 
-const Project = (props) => (
-  <a className="project" href={props.link} target="blank">
-    {props.projectName}
-  </a>
-);
-
 const MyProjects = (props) => (
-  <div className="box">
-    <h1>My Projects</h1>
-    <div className="container projectsList">
-      {props.MyProjects.map((p, index) => (
-        <Project key={index} link={p.link} projectName={p.projectName} />
+  <div id="myprojects" className="box box-info noselect">
+    <h1>Moje projekty</h1>
+    <div className="list">
+      {props.myProjects.map((p, index) => (
+        <a key={index} className="listItem" target="blank" href={p.url}>
+          {p.label}
+        </a>
       ))}
     </div>
   </div>

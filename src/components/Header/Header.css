@@ -1,23 +1,27 @@
-header {
-  height: 100vh;
-}
-header > h1 {
-  position: relative;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: max-content;
-  font-size: 50px;
-  animation-name: welcomeAnimation;
-  animation-duration: 2s;
-}
-@keyframes welcomeAnimation {
-  from {
-    opacity: 0;
-    top: 60%;
+@media (min-device-width: 900px) {
+  /* desktop */
+  header {
+    text-align: center;
   }
-  to {
-    opacity: 1;
-    top: 43%;
+  div.logo {
+    background-image: url("./Logo2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh;
+  }
+}
+@media (max-device-width: 900px) {
+  /* mobile */
+  header {
+    text-align: center;
+    padding: 2rem;
+  }
+  div.logo {
+    background-image: url("./Logo2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15vh;
   }
 }

@@ -1,14 +1,58 @@
-div.languagestoolsandtechnologies > h1 {
-  text-align: center;
-  padding: 1rem;
+@media (min-device-width: 900px) {
+  /* desktop */
+  div.box-info {
+    background-color: var(--bg-color);
+    padding: 2rem;
+  }
+  div.box-info > h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  div.box-info p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.box-info h2 {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  div.tlist {
+    text-align: center;
+    width: 100%;
+  }
+  img.ticon {
+    display: inline-block;
+    width: 4rem;
+    margin: 1rem;
+  }
 }
-div.languagestoolsandtechnologies > div {
-  margin: 1rem auto;
-  text-align: center;
-  width: 50%;
-}
-img.languagestoolsandtechnologieselement {
-  display: inline-block;
-  height: 50px;
-  margin: 10px;
+@media (max-device-width: 900px) {
+  /* mobile */
+  div.box-info {
+    background-color: var(--bg-color);
+    padding: 2rem;
+  }
+  div.box-info > h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  div.box-info p {
+    text-align: center;
+  }
+  div.box-info h2 {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  div.tlist {
+    text-align: center;
+    width: 100%;
+  }
+  img.ticon {
+    display: inline-block;
+    width: 4rem;
+    margin: 1rem;
+  }
 }
