@@ -24,6 +24,19 @@
   a.label:active {
     color: rgb(160, 160, 160);
   }
+  a.nav-link {
+    display: block;
+    padding: 1rem;
+    color: white;
+    background-color: #00468c;
+    transition: filter 300ms;
+  }
+  a.nav-link:hover {
+    filter: brightness(80%);
+  }
+  a.nav-link:active {
+    filter: brightness(70%);
+  }
 }
 @media (max-device-width: 900px) {
   /* mobile */

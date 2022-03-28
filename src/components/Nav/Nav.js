@@ -1,5 +1,5 @@
-import GoToId from "./Components/GoToId/GoToId";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 const Nav = (props) => (
   <nav className="menu">
@@ -7,21 +7,15 @@ const Nav = (props) => (
       deejay adi
     </a>
     <div className="nav-list">
-      <GoToId
-        to="top"
-        title="Home page"
-        label={<i className="fa-solid fa-house"></i>}
-      />
-      <GoToId
-        to="portfolio"
-        title="Portfolio"
-        label={<i className="fa-solid fa-briefcase"></i>}
-      />
-      <GoToId
-        to="portfolio"
-        title="Contact"
-        label={<i className="fa-solid fa-address-card"></i>}
-      />
+      <Link title="Home page" className="nav-link" to="/">
+        <i className="fa-solid fa-house"></i>
+      </Link>
+      <Link title="Portfolio" className="nav-link" to="portfolio">
+        <i className="fa-solid fa-briefcase"></i>
+      </Link>
+      <Link title="Contact" className="nav-link" to="contact">
+        <i className="fa-solid fa-address-card"></i>
+      </Link>
     </div>
   </nav>
 );
