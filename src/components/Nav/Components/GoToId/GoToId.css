@@ -1,0 +1,20 @@
+@media (min-device-width: 900px) {
+  /* desktop */
+  div.goToId {
+    padding: 1rem;
+    transition: filter 300ms;
+    cursor: pointer;
+    background-color: #00468c;
+    font-weight: bold;
+    align-self: center;
+  }
+  div.goToId:hover {
+    filter: brightness(85%);
+  }
+  div.goToId:active {
+    filter: brightness(75%);
+  }
+}
+@media (max-device-width: 900px) {
+  /* mobile */
+}

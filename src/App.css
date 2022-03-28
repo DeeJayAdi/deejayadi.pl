@@ -1,25 +1,12 @@
-:root {
-  --bg-color: #00478f;
-}
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
-  font-family: sans-serif;
   background-color: rgb(50, 50, 50);
   color: white;
-}
-.box {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-family: "Comfortaa", cursive;
 }
