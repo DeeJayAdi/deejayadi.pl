@@ -1,0 +1,120 @@
+section.contact > h1 {
+  text-align: center;
+}
+form.contact {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin: 2rem auto;
+}
+textarea.contactForm {
+  margin-top: 2rem;
+  background-color: var(--foreground-color);
+  color: var(--font-color);
+  padding: 1rem;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+input.contactForm {
+  background-color: var(--foreground-color);
+  color: var(--font-color);
+  padding: 1rem;
+  border: none;
+  font-family: "Inconsolata", monospace;
+  border-radius: 10px;
+  outline: none;
+}
+input.contactForm:nth-child(2) {
+  margin-top: 2rem;
+}
+button.contactForm {
+  margin-top: 2rem;
+  background-color: var(--foreground-color);
+  color: var(--font-color);
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+button.contactForm:hover {
+  filter: brightness(90%);
+}
+button.contactForm:active {
+  filter: brightness(80%);
+}
+div.socialMedia {
+  display: flex;
+  justify-content: center;
+}
+div.email {
+  margin: 1rem;
+  text-align: center;
+}
+a.email {
+  color: var(--font-color);
+  text-decoration: underline 5px transparent;
+  text-underline-offset: 8px;
+  font-size: 1.7rem;
+  transition: text-decoration 300ms;
+}
+a.email:hover {
+  text-decoration-color: var(--font-color);
+}
+div.socialMedia a {
+  color: var(--font-color);
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  background-color: var(--foreground-color);
+  text-align: center;
+  position: relative;
+  transition: filter 300ms, transform 300ms;
+  margin: 0.5rem;
+}
+div.socialMedia a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.socialMedia a:hover {
+  filter: brightness(90%);
+  transform: translateY(-10%);
+}
+div.socialMedia a:active {
+  filter: brightness(80%);
+}
+.send-enter {
+  opacity: 0;
+}
+.send-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.send-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.send-exit {
+  opacity: 0;
+}
+div.sended {
+  margin: 3rem;
+  text-align: center;
+}
+div.sended h1 {
+  padding: 2rem;
+}
+div.sended svg {
+  font-size: 5rem;
+}
