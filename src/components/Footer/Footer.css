@@ -1,0 +1,22 @@
+footer {
+  background-color: var(--foreground-color);
+  text-align: center;
+}
+footer p {
+  padding: 1rem;
+}
+footer p span {
+  font-family: "Inconsolata", monospace;
+}
+footer p a {
+  color: var(--font-color);
+  text-decoration: underline 5px transparent;
+  text-underline-offset: 3px;
+  font-family: "Audiowide", cursive;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+footer p a:hover {
+  filter: brightness(120%);
+  text-decoration-color: var(--font-color);
+}

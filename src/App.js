@@ -1,32 +1,27 @@
 import { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Aboutme from "./Components/Aboutme/Aboutme";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
 import Nav from "./Components/Nav/Nav";
-import HomePage from "./Components/Routes/HomePage/HomePage";
-import Portfolio from "./Components/Routes/Portfolio/Portfolio";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Skills from "./Components/Skills/Skills";
 
 class App extends Component {
-  state = {
-    skillList: [
-      { label: "html", percent: 70 },
-      { label: "js", percent: 80 },
-      { label: "css", percent: 60 },
-      { label: "reactjs", percent: 60 },
-    ],
-  };
   render() {
     return (
-      <BrowserRouter>
-        <div id="top"></div>
+      <>
         <Nav />
-        <Routes>
-          <Route
-            path="/"
-            element={<HomePage skills={this.state.skillList} />}
-          />
-          <Route path="portfolio" element={<Portfolio />} />
-        </Routes>
-      </BrowserRouter>
+        <main>
+          <Header />
+          <Aboutme />
+          <Skills />
+          <Portfolio />
+          <Contact />
+        </main>
+        <Footer />
+      </>
     );
   }
 }

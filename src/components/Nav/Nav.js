@@ -1,22 +1,26 @@
 import "./Nav.css";
-import { Link } from "react-router-dom";
+import { AiFillHome, AiOutlineMail } from "react-icons/ai";
+import { IoMdContact } from "react-icons/io";
+import { MdWork } from "react-icons/md";
+import { BsCodeSlash } from "react-icons/bs";
 
 const Nav = (props) => (
   <nav className="menu">
-    <a className="label" href="/">
-      deejay adi
+    <a className="linkBt" href="#" title="Home">
+      <AiFillHome />
     </a>
-    <div className="nav-list">
-      <Link title="Home page" className="nav-link" to="/">
-        <i className="fa-solid fa-house"></i>
-      </Link>
-      <Link title="Portfolio" className="nav-link" to="portfolio">
-        <i className="fa-solid fa-briefcase"></i>
-      </Link>
-      <Link title="Contact" className="nav-link" to="contact">
-        <i className="fa-solid fa-address-card"></i>
-      </Link>
-    </div>
+    <a className="linkBt" href="#aboutme" title="About me">
+      <IoMdContact />
+    </a>
+    <a className="linkBt" href="#skills" title="Skills">
+      <BsCodeSlash />
+    </a>
+    <a className="linkBt" href="#portfolio" title="Portfolio">
+      <MdWork />
+    </a>
+    <a className="linkBt" href="#contact" title="Contact">
+      <AiOutlineMail />
+    </a>
   </nav>
 );
 

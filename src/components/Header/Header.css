@@ -1,0 +1,11 @@
+/* section.header {
+} */
+section.header p {
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+}
+section.header h1.title {
+  text-transform: uppercase;
+  font-family: "Audiowide", cursive;
+  font-size: 5rem;
+}

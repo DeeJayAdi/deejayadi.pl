@@ -1,43 +1,29 @@
-@media (min-device-width: 900px) {
-  /* desktop */
-  nav.menu {
-    display: flex;
-    justify-content: space-between;
-    background-color: #00468c;
-  }
-  div.nav-list {
-    display: flex;
-  }
-  a.label {
-    align-self: center;
-    padding-left: 1rem;
-    font-family: "Audiowide", cursive;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    transition: color 300ms;
-  }
-  a.label:hover {
-    color: rgb(200, 200, 200);
-  }
-  a.label:active {
-    color: rgb(160, 160, 160);
-  }
-  a.nav-link {
-    display: block;
-    padding: 1rem;
-    color: white;
-    background-color: #00468c;
-    transition: filter 300ms;
-  }
-  a.nav-link:hover {
-    filter: brightness(80%);
-  }
-  a.nav-link:active {
-    filter: brightness(70%);
-  }
+nav.menu {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: right;
+  background-color: var(--foreground-color);
 }
-@media (max-device-width: 900px) {
-  /* mobile */
+a.linkBt {
+  position: relative;
+  display: block;
+  color: var(--font-color);
+  background-color: var(--foreground-color);
+  width: 3rem;
+  height: 3rem;
+  transition: filter 300ms;
+  font-size: 1.5rem;
+}
+a.linkBt svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a.linkBt:hover {
+  filter: brightness(85%);
+}
+a.linkBt:active {
+  filter: brightness(75%);
 }
