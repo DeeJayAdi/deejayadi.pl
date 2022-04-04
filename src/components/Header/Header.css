@@ -18,7 +18,7 @@ section.header h1.title {
 svg text {
   font-family: "Audiowide", cursive;
   text-transform: uppercase;
-  animation: stroke 5s alternate;
+  animation: stroke 5s infinite alternate;
   stroke-width: 2;
   fill: var(--font-color);
   stroke: var(--font-color);
@@ -30,7 +30,7 @@ svg text {
     stroke: var(--font-color);
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
-    stroke-width: 2;
+    stroke-width: 1;
   }
   70% {
     fill: var(--background-color);

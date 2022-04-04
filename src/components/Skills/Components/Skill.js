@@ -8,7 +8,6 @@ const Skill = (props) => {
     const e = document.getElementById(props.name);
 
     if (window.scrollY > e.offsetTop - 200) {
-      console.log("now");
       setTimeout(() => {
         setPercent(props.percent);
       }, 300);

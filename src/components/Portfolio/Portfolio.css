@@ -1,0 +1,35 @@
+section.portfolio > h1 {
+  text-align: center;
+}
+div.projects {
+  margin-top: 2rem;
+  text-align: center;
+}
+div.project {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  border: 10px solid var(--foreground-color);
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 300ms;
+}
+div.project:hover {
+  filter: brightness(120%);
+  box-shadow: 0 0 10px #787878;
+}
+div.project div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--font-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+div.project div span:last-child {
+  margin-top: 1rem;
+}
