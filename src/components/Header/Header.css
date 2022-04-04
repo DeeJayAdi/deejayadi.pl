@@ -15,3 +15,37 @@ section.header h1.title {
     font-size: 2.7rem;
   }
 }
+svg text {
+  font-family: "Audiowide", cursive;
+  text-transform: uppercase;
+  animation: stroke 5s alternate;
+  stroke-width: 2;
+  fill: var(--font-color);
+  stroke: var(--font-color);
+  font-size: 140px;
+}
+@keyframes stroke {
+  0% {
+    fill: var(--background-color);
+    stroke: var(--font-color);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: var(--background-color);
+    stroke: var(--font-color);
+  }
+  80% {
+    fill: var(--background-color);
+    stroke: var(--font-color);
+    stroke-width: 3;
+  }
+  100% {
+    fill: var(--font-color);
+    stroke: var(--font-color);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}

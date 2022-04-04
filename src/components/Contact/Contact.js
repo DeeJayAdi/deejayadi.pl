@@ -7,15 +7,16 @@ import "./Contact.css";
 
 const socialMediaList = [
   { href: "", title: "Facebook", icon: <BsFacebook /> },
-  {
-    title: "GitHub",
-    href: "https://github.com/DeeJayAdi",
-    icon: <AiFillGithub />,
-  },
+
   {
     title: "YouTube",
     href: "https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw",
     icon: <AiFillYoutube />,
+  },
+  {
+    title: "GitHub",
+    href: "https://github.com/DeeJayAdi",
+    icon: <AiFillGithub />,
   },
   {
     title: "Discord",
