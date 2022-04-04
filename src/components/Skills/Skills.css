@@ -1,0 +1,25 @@
+div.skill {
+  display: inline-block;
+  margin: 1rem;
+  width: max-content;
+  text-align: center;
+  text-transform: uppercase;
+}
+div.skill > p {
+  margin-top: 1rem;
+}
+div.skill-circle {
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid gray;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+div.skill-circle p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
