@@ -1,8 +1,34 @@
 import { useState } from "react";
 import { AiFillGithub, AiFillYoutube, AiFillCheckCircle } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { CSSTransition } from "react-transition-group";
 import "./Contact.css";
+
+const socialMediaList = [
+  { href: "", title: "Facebook", icon: <BsFacebook /> },
+  {
+    title: "GitHub",
+    href: "https://github.com/DeeJayAdi",
+    icon: <AiFillGithub />,
+  },
+  {
+    title: "YouTube",
+    href: "https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw",
+    icon: <AiFillYoutube />,
+  },
+  {
+    title: "Discord",
+    href: "https://discord.gg/q9Cu4hyR8D",
+    icon: <FaDiscord />,
+  },
+];
+
+const SocialMediaLink = (props) => (
+  <a href={props.href} target="blank" title={props.title}>
+    {props.icon}
+  </a>
+);
 
 const Contact = (props) => {
   const [fullName, setFullName] = useState("");
@@ -59,19 +85,14 @@ const Contact = (props) => {
         </a>
       </div>
       <div className="socialMedia">
-        <a href="" target="blank" title="Facebook">
-          <BsFacebook />
-        </a>
-        <a href="https://github.com/DeeJayAdi" target="blank" title="GitHub">
-          <AiFillGithub />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw"
-          target="blank"
-          title="YouTube"
-        >
-          <AiFillYoutube />
-        </a>
+        {socialMediaList.map((bt, index) => (
+          <SocialMediaLink
+            key={index}
+            title={bt.title}
+            href={bt.href}
+            icon={bt.icon}
+          />
+        ))}
       </div>
     </section>
   );
