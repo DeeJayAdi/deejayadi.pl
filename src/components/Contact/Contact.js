@@ -31,6 +31,7 @@ const Contact = (props) => {
             className="contactForm"
             placeholder="Full name"
             value={fullName}
+            required
             onChange={(e) => setFullName(e.target.value)}
           />
           <input
@@ -38,6 +39,7 @@ const Contact = (props) => {
             className="contactForm"
             placeholder="Email"
             value={email}
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
@@ -45,6 +47,7 @@ const Contact = (props) => {
             placeholder="Enter your message"
             rows="10"
             value={message}
+            required
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <button className="contactForm">Send</button>

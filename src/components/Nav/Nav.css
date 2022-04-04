@@ -4,6 +4,7 @@ nav.menu {
   display: flex;
   justify-content: right;
   background-color: var(--foreground-color);
+  z-index: 1;
 }
 a.linkBt {
   position: relative;
