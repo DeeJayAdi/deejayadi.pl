@@ -118,3 +118,8 @@ div.sended h1 {
 div.sended svg {
   font-size: 5rem;
 }
+@media (max-device-width: 900px) {
+  form.contact {
+    width: 100%;
+  }
+}

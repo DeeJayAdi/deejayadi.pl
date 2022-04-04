@@ -28,3 +28,9 @@ a.linkBt:hover {
 a.linkBt:active {
   filter: brightness(75%);
 }
+
+@media (max-device-width: 900px) {
+  nav.menu {
+    justify-content: center;
+  }
+}
