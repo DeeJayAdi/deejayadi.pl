@@ -42,3 +42,8 @@ section {
     padding: 1rem;
   }
 }
+::selection,
+::-moz-selection {
+  transition: background-color 300ms;
+  background-color: #80808094;
+}
