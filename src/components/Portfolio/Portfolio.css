@@ -4,12 +4,9 @@ section.portfolio > h1 {
 div.projects {
   margin-top: 2rem;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 a.project {
-  display: block;
+  display: inline-block;
   width: 15rem;
   height: 15rem;
   border: 10px solid var(--foreground-color);
@@ -33,7 +30,4 @@ a.project p {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-}
-div.project div span:last-child {
-  margin-top: 1rem;
 }

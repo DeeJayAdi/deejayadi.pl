@@ -22,9 +22,9 @@ div.menu {
   justify-content: right;
 }
 a.linkBt {
-  outline: none;
   position: relative;
   display: block;
+  outline: none;
   color: var(--font-color);
   background-color: var(--foreground-color);
   width: 3rem;

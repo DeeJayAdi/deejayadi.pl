@@ -12,7 +12,7 @@ const projects = [
 ];
 
 const Project = (props) => (
-  <a className="project" href={props.href} target="blank">
+  <a href={props.href} target="blank" className="project">
     <p>{props.title}</p>
   </a>
 );

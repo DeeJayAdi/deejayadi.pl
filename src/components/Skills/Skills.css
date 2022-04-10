@@ -4,7 +4,4 @@ section.skills h1 {
 div.skill-list {
   margin-top: 2rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
