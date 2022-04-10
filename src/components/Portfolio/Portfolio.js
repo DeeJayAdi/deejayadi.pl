@@ -14,7 +14,6 @@ const projects = [
 const Project = (props) => (
   <div className="project" onClick={() => (window.location.href = props.href)}>
     <div>
-      {" "}
       <span>Go to</span> <span>{props.title}</span>
     </div>
   </div>

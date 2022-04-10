@@ -5,9 +5,10 @@
   box-sizing: border-box;
 }
 :root {
-  --font-color: #11d9c5;
-  --background-color: #011126;
-  --foreground-color: #011c40;
+  --font-color: #2592fe;
+  --background-color: #1f1f1f;
+  --background-color2: #222222;
+  --foreground-color: #252525;
 }
 html {
   background-color: var(--background-color);
@@ -15,13 +16,11 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
-main {
-  margin: 0 auto;
-  width: 70%;
-}
 section {
-  padding-top: 10vh;
-  min-height: 100vh;
+  padding: 10vh 2rem;
+}
+section:nth-child(2n) {
+  background-color: var(--background-color2);
 }
 .noselect {
   -webkit-user-select: none;
@@ -34,13 +33,6 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media (max-device-width: 900px) {
-  main {
-    margin: 0;
-    width: 100%;
-    padding: 1rem;
-  }
 }
 ::selection,
 ::-moz-selection {

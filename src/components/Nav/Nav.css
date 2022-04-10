@@ -1,10 +1,24 @@
 nav.menu {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: right;
   background-color: var(--foreground-color);
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px black;
+}
+a.title {
+  padding-left: 1rem;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Audiowide", cursive;
+  color: var(--font-color);
+  text-decoration: none;
+}
+div.menu {
+  display: flex;
+  justify-content: right;
 }
 a.linkBt {
   position: relative;
