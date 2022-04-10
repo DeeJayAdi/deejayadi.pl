@@ -3,12 +3,16 @@ import { AiFillHome, AiOutlineMail } from "react-icons/ai";
 import { IoMdContact } from "react-icons/io";
 import { MdWork } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = (props) => (
   <nav className="menu">
     <a href="/" className="title">
       deejay adi
     </a>
+    <div className="hamburger">
+      <GiHamburgerMenu />
+    </div>
     <div className="menu">
       <a className="linkBt" href="#" title="Home">
         <AiFillHome />

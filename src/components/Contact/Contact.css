@@ -79,6 +79,7 @@ div.socialMedia a {
   text-align: center;
   position: relative;
   transition: filter 300ms, transform 300ms;
+  outline: none;
   margin: 0.5rem;
 }
 div.socialMedia a svg {

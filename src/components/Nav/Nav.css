@@ -44,9 +44,33 @@ a.linkBt:hover {
 a.linkBt:active {
   filter: brightness(75%);
 }
+div.hamburger {
+  display: none;
+}
 
 @media (max-device-width: 900px) {
-  nav.menu {
-    justify-content: center;
+  div.menu {
+    flex-direction: row;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    transition: top 300ms, opacity 600ms ease-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  a.linkBt {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  div.hamburger {
+    display: block;
+    padding: 1rem;
+  }
+  div.hamburger:hover + div.menu,
+  div.menu:hover {
+    display: flex;
+    top: 100%;
+    opacity: 1;
   }
 }

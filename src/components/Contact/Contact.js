@@ -6,13 +6,12 @@ import { CSSTransition } from "react-transition-group";
 import "./Contact.css";
 
 const socialMediaList = [
-  { href: "", title: "Facebook", icon: <BsFacebook /> },
-
-  {
-    title: "YouTube",
-    href: "https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw",
-    icon: <AiFillYoutube />,
-  },
+  // { href: "", title: "Facebook", icon: <BsFacebook /> },
+  // {
+  //   title: "YouTube",
+  //   href: "https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw",
+  //   icon: <AiFillYoutube />,
+  // },
   {
     title: "GitHub",
     href: "https://github.com/DeeJayAdi",
