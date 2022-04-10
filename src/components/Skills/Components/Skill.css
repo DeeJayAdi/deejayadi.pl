@@ -1,5 +1,5 @@
 div.skill {
-  display: inline-block;
+  display: block;
   margin: 1rem;
   width: max-content;
   text-align: center;

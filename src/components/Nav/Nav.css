@@ -14,6 +14,7 @@ a.title {
   font-size: 2rem;
   font-family: "Audiowide", cursive;
   color: var(--font-color);
+  outline: none;
   text-decoration: none;
 }
 div.menu {
@@ -21,6 +22,7 @@ div.menu {
   justify-content: right;
 }
 a.linkBt {
+  outline: none;
   position: relative;
   display: block;
   color: var(--font-color);

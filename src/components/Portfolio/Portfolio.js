@@ -12,11 +12,9 @@ const projects = [
 ];
 
 const Project = (props) => (
-  <div className="project" onClick={() => (window.location.href = props.href)}>
-    <div>
-      <span>Go to</span> <span>{props.title}</span>
-    </div>
-  </div>
+  <a className="project" href={props.href} target="blank">
+    <p>{props.title}</p>
+  </a>
 );
 
 const Portfolio = (props) => (

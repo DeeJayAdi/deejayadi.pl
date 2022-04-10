@@ -1,19 +1,8 @@
-/* section.header {
-} */
-section.header p {
-  font-family: "Inconsolata", monospace;
-  font-size: 1rem;
-}
 section.header h1.title {
-  text-transform: uppercase;
-  font-family: "Audiowide", cursive;
-  font-size: 5rem;
+  font-family: "Inconsolata", monospace;
 }
-@media (max-device-width: 900px) {
-  section.header h1.title {
-    width: max-content;
-    font-size: 2.7rem;
-  }
+svg {
+  margin-top: 1rem;
 }
 svg text {
   font-family: "Audiowide", cursive;

@@ -4,9 +4,12 @@ section.portfolio > h1 {
 div.projects {
   margin-top: 2rem;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-div.project {
-  display: inline-block;
+a.project {
+  display: block;
   width: 15rem;
   height: 15rem;
   border: 10px solid var(--foreground-color);
@@ -16,12 +19,13 @@ div.project {
   border-radius: 50%;
   overflow: hidden;
   transition: 300ms;
+  text-decoration: none;
 }
-div.project:hover {
+a.project:hover {
   filter: brightness(120%);
   box-shadow: 0 0 10px #787878;
 }
-div.project div {
+a.project p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
