@@ -13,9 +13,9 @@ const Nav = (props) => (
       <a className="linkBt" href="#" title="Home">
         <AiFillHome />
       </a>
-      <a className="linkBt" href="#aboutme" title="About me">
+      {/* <a className="linkBt" href="#aboutme" title="About me">
         <IoMdContact />
-      </a>
+      </a> */}
       <a className="linkBt" href="#skills" title="Skills">
         <BsCodeSlash />
       </a>

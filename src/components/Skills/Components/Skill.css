@@ -16,7 +16,7 @@ div.skill-circle {
   font-weight: bold;
   overflow: hidden;
   position: relative;
-  background-color: var(--foreground-color);
+  background-color: #363636;
 }
 div.block {
   position: absolute;
@@ -24,7 +24,7 @@ div.block {
   width: 100%;
   height: 0%;
   transition: height 1s;
-  background-color: var(--font-color);
+  background-color: var(--foreground-color);
 }
 div.skill-circle p {
   font-size: 1.4rem;

@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 :root {
-  --font-color: #2592fe;
-  --background-color: #1f1f1f;
-  --background-color2: #222222;
-  --foreground-color: #252525;
+  --font-color: #f0f2f0;
+  --background-color: #303030;
+  --background-color2: #262626;
+  --foreground-color: #3955d3;
 }
 html {
   background-color: var(--background-color);
