@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "./App.css";
-import Aboutme from "./Components/Aboutme/Aboutme";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -15,7 +14,6 @@ class App extends Component {
         <Nav />
         <main>
           <Header />
-          {/* <Aboutme /> */}
           <Skills />
           <Portfolio />
           <Contact />

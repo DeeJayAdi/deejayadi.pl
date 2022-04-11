@@ -1,17 +1,10 @@
 import { useState } from "react";
-import { AiFillGithub, AiFillYoutube, AiFillCheckCircle } from "react-icons/ai";
+import { AiFillGithub, AiFillCheckCircle } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
-import { BsFacebook } from "react-icons/bs";
 import { CSSTransition } from "react-transition-group";
 import "./Contact.css";
 
 const socialMediaList = [
-  // { href: "", title: "Facebook", icon: <BsFacebook /> },
-  // {
-  //   title: "YouTube",
-  //   href: "https://www.youtube.com/channel/UCKjm0Hr_DePr_EY4mi0vTfw",
-  //   icon: <AiFillYoutube />,
-  // },
   {
     title: "GitHub",
     href: "https://github.com/DeeJayAdi",
