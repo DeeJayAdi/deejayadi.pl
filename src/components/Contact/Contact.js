@@ -36,7 +36,7 @@ const Contact = (props) => {
 
   return (
     <section className="contact" id="contact">
-      <h1>Do something together ;D</h1>
+      <h1>Message me!</h1>
       <CSSTransition in={!send} timeout={1000} mountOnEnter classNames="send">
         <div className="sended">
           <h1>Message sended</h1>
