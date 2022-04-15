@@ -1,11 +1,11 @@
 import { Component } from "react";
 import "./App.css";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Nav from "./Components/Nav/Nav";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Skills from "./Components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Skills from "./components/Skills/Skills";
 
 class App extends Component {
   render() {
