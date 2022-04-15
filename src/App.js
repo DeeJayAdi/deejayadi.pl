@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./App.css";
-import Contact from "./Components/Contact/Contact";
+import Contact from "./Components/contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Nav from "./Components/Nav/Nav";
