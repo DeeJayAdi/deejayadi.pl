@@ -31,7 +31,6 @@ const Skill = (props) => {
     <div className="skill" onClick={check} id={props.name}>
       <div className="skill-circle">
         <div className="block" style={{ height: `${percent}%` }}></div>
-        <div className="inner center"></div>
         <p className="center">{props.percent}%</p>
       </div>
       <p>{props.name}</p>
