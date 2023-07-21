@@ -1,0 +1,42 @@
+div.list {
+  @media only screen and (max-width: 900px) {
+    // Mobile View
+    top: 100%;
+    left: -200%;
+    position: absolute;
+    background: rgb(32, 89, 200);
+    background: radial-gradient(circle, #2059c8 0%, #03318c 100%);
+    width: 100vw;
+    height: 100vh;
+    transition: 800ms;
+
+    &.list.active {
+      left: 0%;
+    }
+    div.listElement {
+      display: block;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 1rem;
+      color: white;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    // Desktop View
+    display: flex;
+  }
+
+  div.listElement {
+    cursor: pointer;
+    padding: 1rem;
+    transition: 300ms;
+  }
+  div.listElement:hover {
+    background-color: #ffffff33;
+  }
+  div.listElement:active {
+    background-color: #ffffff5e;
+  }
+}

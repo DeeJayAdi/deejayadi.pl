@@ -1,0 +1,28 @@
+div.langSelector {
+  text-align: center;
+  padding: 1rem;
+  background-color: #032d81;
+  div.flag {
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      scale: 1.1;
+    }
+    &:active {
+      scale: 0.9;
+    }
+    img {
+      height: 25px;
+      width: 50px;
+      transition: 300ms;
+    }
+  }
+  div.flag.active {
+    img {
+      box-shadow: 0 0 5px white;
+    }
+  }
+}

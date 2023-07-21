@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap"); // Loading logo font
+
+$bgColor: #03318c;
+
+header.main {
+  background-color: $bgColor;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  a.logo {
+    color: white;
+    text-decoration: none;
+    background-color: $bgColor;
+    padding: 1rem;
+    transition: 300ms;
+    text-transform: uppercase;
+    font-family: "Audiowide", cursive;
+    height: 100%;
+  }
+  a.logo:hover {
+    background-color: #ffffff33;
+  }
+  a.logo:active {
+    background-color: #ffffff5e;
+  }
+  @media only screen and (max-width: 900px) {
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+    }
+  }
+}

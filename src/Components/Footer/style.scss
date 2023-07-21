@@ -1,0 +1,17 @@
+footer.main {
+  background-color: #03318c;
+  font-size: 14px;
+  div.content {
+    padding: 1rem;
+    text-align: center;
+    a {
+      color: #666666;
+      transition: 300ms;
+      text-decoration: underline transparent;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline 2px white;
+    }
+  }
+}
