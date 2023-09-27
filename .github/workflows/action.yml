@@ -27,3 +27,7 @@ jobs:
           git add -f build/
           git commit -m "Deploy React app to 'public' branch"
           git push origin public
+      - name: Create docs folder
+        run: mkdir docs
+      - name: Move folder to docs
+        run: mv build /docs
