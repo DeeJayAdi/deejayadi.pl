@@ -1,0 +1,21 @@
+name: test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Including node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.12.0
+      - name: Install node modules
+        run: npm i
+      - name: Building the webpage
+        run: npm run build
+      - name: Printing the list of files
+        run: ls
