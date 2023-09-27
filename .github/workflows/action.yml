@@ -19,3 +19,11 @@ jobs:
         run: npm run build
       - name: Printing the list of files
         run: ls
+      - name: Deploy to 'public' banch
+        run: |
+          git config --local user.email deejayadipl@gmail.com
+          git config --local user.name deejayadi
+          git checkout -b public
+          git add -f build/
+          git commit -m "Deploy React app to 'public' branch"
+          git push origin public

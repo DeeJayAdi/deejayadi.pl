@@ -13,16 +13,16 @@ const Nav = (props) => (
       <GiHamburgerMenu />
     </div>
     <div className="menu">
-      <a className="linkBt" href="#" title="Home">
+      <a className="linkBt" href="/#" title="Home">
         <AiFillHome />
       </a>
-      <a className="linkBt" href="#skills" title="Skills">
+      <a className="linkBt" href="/#skills" title="Skills">
         <BsCodeSlash />
       </a>
-      <a className="linkBt" href="#portfolio" title="Portfolio">
+      <a className="linkBt" href="/#portfolio" title="Portfolio">
         <MdWork />
       </a>
-      <a className="linkBt" href="#contact" title="Contact">
+      <a className="linkBt" href="/#contact" title="Contact">
         <AiOutlineMail />
       </a>
     </div>
