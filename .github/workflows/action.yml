@@ -26,9 +26,7 @@ jobs:
 
       - name: Fix React JS Build Path
         uses: deejayadi/github-workflows-pages-reactjs-path-fix@v1
-        with:
-          repo_name: ${{ github.event.repository.name }}
-
+        
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
